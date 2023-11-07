@@ -1,0 +1,252 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7F27057E-4E95-4D01-8A59-247898F38FEE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>obs</RootNamespace>
+    <AssemblyName>obs</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="adminMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminMain.Designer.cs">
+      <DependentUpon>adminMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="admin_giris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin_giris.Designer.cs">
+      <DependentUpon>admin_giris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bolum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bolum.Designer.cs">
+      <DependentUpon>bolum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ders.Designer.cs">
+      <DependentUpon>ders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="derskayit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="derskayit.Designer.cs">
+      <DependentUpon>derskayit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fakulte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fakulte.Designer.cs">
+      <DependentUpon>fakulte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Giris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Giris.Designer.cs">
+      <DependentUpon>Giris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="notGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="notGiris.Designer.cs">
+      <DependentUpon>notGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="notGoruntule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="notGoruntule.Designer.cs">
+      <DependentUpon>notGoruntule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="obsDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>obsDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ogrenci.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ogrenci.Designer.cs">
+      <DependentUpon>ogrenci.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ogrenciMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ogrenciMain.Designer.cs">
+      <DependentUpon>ogrenciMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ogrenci_giris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ogrenci_giris.Designer.cs">
+      <DependentUpon>ogrenci_giris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ogretmen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ogretmen.Designer.cs">
+      <DependentUpon>ogretmen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ogretmenMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ogretmenMain.Designer.cs">
+      <DependentUpon>ogretmenMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ogretmen_giris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ogretmen_giris.Designer.cs">
+      <DependentUpon>ogretmen_giris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="adminMain.resx">
+      <DependentUpon>adminMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin_giris.resx">
+      <DependentUpon>admin_giris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bolum.resx">
+      <DependentUpon>bolum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ders.resx">
+      <DependentUpon>ders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="derskayit.resx">
+      <DependentUpon>derskayit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fakulte.resx">
+      <DependentUpon>fakulte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Giris.resx">
+      <DependentUpon>Giris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="notGiris.resx">
+      <DependentUpon>notGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="notGoruntule.resx">
+      <DependentUpon>notGoruntule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ogrenci.resx">
+      <DependentUpon>ogrenci.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ogrenciMain.resx">
+      <DependentUpon>ogrenciMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ogrenci_giris.resx">
+      <DependentUpon>ogrenci_giris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ogretmen.resx">
+      <DependentUpon>ogretmen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ogretmenMain.resx">
+      <DependentUpon>ogretmenMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ogretmen_giris.resx">
+      <DependentUpon>ogretmen_giris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="obsDataSet.xsc">
+      <DependentUpon>obsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="obsDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>obsDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="obsDataSet.xss">
+      <DependentUpon>obsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exam.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\teachr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\teachh.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
